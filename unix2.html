@@ -31,7 +31,7 @@ of
 <p> (Note: The directory <strong>~dlipman</strong> means the home directory of
   the user dlipman, so you are copying the file from the linux-tutorial
   directory in dlipman's public_html directory. If you are not logged in to
-  the CS cluster (in the labs), you can grab a copy of the file
+  the CS machines in the Olsen Hall labs, you can grab a copy of the file
   <a href="science.txt">here</a>.
   
   Use 'File/Save As..' from the menu bar to save it into
@@ -95,10 +95,12 @@ directory. </p>
 <p>The command <samp>less</samp> writes the contents of a file onto the screen
   a page at a time. Type </p>
 <p class="command"> $ less science.txt </p>
-<p> Press the <code>[space-bar]</code> if you want to see another page,
-  type <code>[q]</code> if you want to quit reading. As you can
-  see, <samp>less</samp> is used in preference to <samp>cat</samp> for long
-  files. </p>
+<p> Press the <code>[space-bar]</code> or <code>[page-down]</code> key if you
+want to see the next page,
+  <code>[page-up]</code> to see the previous page, and type <code>[q]</code>
+  if you want to quit reading. There are many other useful commands, that you
+  can see by typing <code>[h]</code> (help). As you can see, <samp>less</samp>
+  is used in preference to <samp>cat</samp> for long files. </p>
 <p>&nbsp;</p>
 <h3>head</h3>
 <p>The <samp>head</samp> command writes the first ten lines of a file to the
@@ -107,8 +109,8 @@ screen.
 <p> First clear the screen then type </p>
 <p class="command"> $ head science.txt </p>
 <p> Then type </p>
-<p class="command"> $ head -5 science.txt </p>
-<p> What difference did the -5 do to the head command? </p>
+<p class="command"> $ head -n 5 science.txt </p>
+<p> What difference did the -n 5 do to the head command? </p>
 <p>&nbsp;</p>
 <h3>tail</h3>
 <p>The <samp>tail</samp> command writes the last ten lines of a file to the
@@ -125,11 +127,12 @@ screen.
   the word 'science', type </p>
 <p class="command"> $ less science.txt </p>
 <p> then, still in <samp>less</samp> (i.e. don't press [q] to quit), type a
-  forward slash <code>[/]</code> followed by the word to search</p>
+  forward slash <code>[/]</code> followed by the word to search for</p>
 <p class="command"> /science</p>
 <p> As you can see, <samp>less</samp> finds and highlights the
   keyword. Type <code>[n]</code> to search for the next occurrence of the
-  word. </p>
+  word. (You can also search backwards for the previous occurrence, by
+  typing <code>[p]</code></p>
 <p>&nbsp;</p>
 <h3>grep (don't ask why it is called grep)</h3>
 <p><samp>grep</samp> is one of many standard Linux utilities. It searches
