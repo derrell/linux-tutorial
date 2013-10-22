@@ -11,6 +11,7 @@
 <body>
 <h1>Linux Tutorial Six </h1>
 <h2>Other useful Linux commands &nbsp; </h2>
+<!--
 <h3>quota</h3>
 <p>All students are allocated a certain amount of disk space on the file system 
   for their personal files, usually about 100Mb. If you go over your quota, you are given 7 days to remove excess files. 
@@ -45,14 +46,19 @@
 <p> To uncomress the file, use the uncompress command. </p>
 
 <p class="command"> % uncompress science.txt.Z </p>
+-->
 
 <h3>gzip</h3>
+<!--
 <p>This also compresses a file, and is more efficient than compress. For example, 
   to zip science.txt, type </p>
+-->
+<p>Compress (zip) a file. For example, to compress science.txt, type </p>
 
 <p class="command"> % gzip science.txt </p>
-<p>This will zip the file and place it in a file called science.txt.gz </p>
-<p> To unzip the file, use the gunzip command. </p>
+<p>This will compress the file and place it in a file called
+science.txt.gz </p>
+<p> To uncompress the file, use the gunzip command. </p>
 
 <p class="command"> % gunzip science.txt.gz </p>
 
@@ -75,13 +81,19 @@
 <p class="command">% !-3 (recall third most recent command) </p>
 <p class="command">% !5 (recall 5th command in list) </p>
 <p class="command">% !grep (recall last command starting with grep) </p>
+
+<!--
 <p>You can increase the size of the history buffer by typing</p>
 
 <p class="command">% set history=100 </p>
-    <p> </p>
+-->
+    <p>&nbsp; </p>
 <p class="navbar"><a href="unix5.html"><img src="media/left.gif" alt="Previous" width="37" height="39" border="0" /></a> 
   <a href="index.html"><img src="media/home.gif" alt="Home" width="81" height="39" border="0" /></a> 
-  <a href="unix7.html"><img src="media/right.gif" alt="Next" width="37" height="39" border="0" /></a> 
+<!--
+  <a href="unix7.html"><img src="media/right.gif" alt="Next" width="37" --
+  --height="39" border="0" /></a>
+-->
 </p>
 
 <p class="date"> <a href="http://www.cs.uml.edu/ecg/index.php/People/DerrellLipman"><font color="#FFFFCC">dlipman@cs.uml.edu</font></a>,  16 October 2013 </p>

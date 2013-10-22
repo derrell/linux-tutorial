@@ -15,15 +15,18 @@
 
     
 <h3>Exercise 3b</h3>
-<p><samp>a2ps -Phockney <var>textfile</var></samp> is the command to print a postscript 
-  file to the printer hockney. </p>
+<p>Read the instructions for printing in the computer science labs, at
+  <a href='http://www.uml.edu/Sciences/computer-science/Faq/Printing.aspx'>
+    http://www.uml.edu/Sciences/computer-science/Faq/Printing.aspx
+  </a>, and then return here.</p>
 <p> Using pipes, print all lines of <strong>list1</strong> and <strong>list2</strong> 
-  containing the letter 'p', sort the result, and print to the printer hockney.</p>
+  containing the letter 'p', sort the result, and print to the printer
+  HP_BW_NORTH. Retrieve the printout in your lab room.</p>
 <p>&nbsp;</p>
 <h3>Answer</h3>
-<p class="command">% cat list1 list2 | grep p | sort | a2ps -Phockney</p>
+<p class="command">$ cat list1 list2 | grep p | sort | lpr -P HP_BW_NORTH -U <i>your_student_id#</i></p>
 <p>&nbsp;</p>
-<p class="date">M.Stonebank@ee.surrey.ac.uk, &copy; November, 2002</p>
+<p class="date"> <a href="http://www.cs.uml.edu/ecg/index.php/People/DerrellLipman"><font color="#FFFFCC">dlipman@cs.uml.edu</font></a>,  16 October 2013 </p>
 
 </body>
 </html>
